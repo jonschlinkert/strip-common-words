@@ -8,25 +8,25 @@
 'use strict';
 
 var assert = require('assert');
-var stripCommonWords = require('../');
+var stripCommon = require('./');
 
-describe('stripCommonWords', function () {
+describe('stripCommon', function () {
   it('should strip common words.', function () {
-    var actual = stripCommonWords('foo the bar');
+    var actual = stripCommon('foo the bar');
     assert(/foo/.test(actual));
     assert(/bar/.test(actual));
     assert(!/the/.test(actual));
   });
 
   it('should strip common words.', function () {
-    var actual = stripCommonWords('one a two');
+    var actual = stripCommon('one a two');
     assert(/one/.test(actual));
     assert(/two/.test(actual));
     assert(!/a/.test(actual));
   });
 
   it('should strip common words.', function () {
-    var actual = stripCommonWords('install the module');
+    var actual = stripCommon('install the module');
     assert(/install/.test(actual));
     assert(/module/.test(actual));
     assert(!/the/.test(actual));

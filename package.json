@@ -1,7 +1,7 @@
 {
   "name": "strip-common-words",
   "description": "Strip the 100 most commonly used English words from a string.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/jonschlinkert/strip-common-words",
   "author": {
     "name": "Jon Schlinkert",
@@ -21,13 +21,13 @@
     }
   ],
   "keywords": [
-    "docs",
-    "documentation",
-    "generate",
-    "generator",
-    "markdown",
-    "templates",
-    "verb"
+    "common",
+    "english",
+    "remove",
+    "strip",
+    "uncommon",
+    "word",
+    "words"
   ],
   "main": "index.js",
   "engines": {
